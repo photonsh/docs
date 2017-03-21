@@ -28,6 +28,6 @@ That is why in Photon **we want you to be the owner of your content**. Your snip
 
 We try to make our service use web standards as accurately as possible, making use of best practices.
 
-For example, we use the HTML `<figure>` ([link](https://html.spec.whatwg.org/multipage/semantics.html#the-figure-element){target="_blank"}) element to wrap the snippet, as indicated by the [HTML standard](https://developers.whatwg.org/grouping-content.html#the-figure-element){target="_blank"}.
+For example, we use the HTML `<figure>` ([link](https://html.spec.whatwg.org/multipage/semantics.html#the-figure-element){target="_blank"}) element to wrap the snippet, as indicated by the [HTML standard](https://developers.whatwg.org/grouping-content.html#the-figure-element){target="_blank"}. We also use the HTML `<code>` ([link](https://html.spec.whatwg.org/multipage/semantics.html#the-code-element){target="_blank"}) and `<samp>` ([link](https://html.spec.whatwg.org/multipage/semantics.html#the-samp-element){target="_blank"}) elements to differenciate the input (code) from the output (sample).
 
 Other HTML elements and CSS selectors have been carefully selected to promote the **correct markup** on the web.

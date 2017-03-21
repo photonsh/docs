@@ -15,10 +15,11 @@ In this section we find rules that are in charge of applying general and structu
 The structural selectors are:
 
 * `.psh`
+* `.psh figure`
 * `.psh pre`
 * `.psh code`
-* `.psh samp`
 * `.psh code::selection`
+* `.psh samp`
 * `.psh samp::selection`
 
 ## Plugins
