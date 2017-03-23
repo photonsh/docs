@@ -23,7 +23,7 @@ Some HTML special characters [must be escaped](https://photon.sh/docs/getting-st
 The library should be included just before the HTML closing `</body>` tag.
 
 ``` {.language-html}
-<script async id="photon_lib" src="https://cdn.jsdelivr.net/photon/latest/photon.min.js"></script>
+<script async id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/latest/photon.min.js"></script>
 ```
 
 ::: info

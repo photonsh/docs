@@ -3,7 +3,7 @@
 You can create a theme or modify an existing one easily and quickly.
 
 ::: info
-You can check out `https://github.com/photonsh/themes/photon-light/photon-light.css` as an example.
+You can check out [photon-light](https://github.com/photonsh/themes/blob/master/photon-light/photon-light.css){target="_blank"} as an example.
 :::
 
 The themes are divided mainly into three sections.

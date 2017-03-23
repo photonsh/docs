@@ -53,13 +53,13 @@ That is all!
   <head>
     <title>Photon JavaScript example</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/photon/latest/themes/photon-light/photon-light.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/latest/photon-light/photon-light.min.css">
   </head>
   <body>
     <pre>
       <code class="language-javascript">console.log('example');</code>
     </pre>
-    <script async id="photon_lib" src="https://cdn.jsdelivr.net/photon/latest/photon.min.js"></script>
+    <script async id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/latest/photon.min.js"></script>
     <script>
       document.querySelector('#photon_lib').addEventListener('load', function() {
         photon.highlight({ apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' });
