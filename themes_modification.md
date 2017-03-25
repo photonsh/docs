@@ -18,9 +18,7 @@ The structural selectors are:
 * `.psh figure`
 * `.psh pre`
 * `.psh code`
-* `.psh code::selection`
 * `.psh samp`
-* `.psh samp::selection`
 
 ## Plugins
 
