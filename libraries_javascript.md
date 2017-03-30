@@ -20,17 +20,25 @@ Some HTML special characters [must be escaped](https://photon.sh/docs/getting-st
 
 ## Installation
 
-The library should be included just before the HTML closing `</body>` tag.
+### Recommended mode
+
+The library should be included between the HTML `<head>` and `</head>` tags and it must contain the `defer` and the `id` attributes.
 
 ``` {.language-html}
-<script async id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/latest/photon.min.js"></script>
+<script defer id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/0.1.2/photon.min.js"></script>
 ```
 
-::: info
-The `async` attribute is *optional*.
-:::
+### Alternative mode
+
+The library can be also included just before the HTML closing `</body>` tag, where it does not need those attributes.
+
+``` {.language-html}
+<script src="https://cdn.jsdelivr.net/photon-js/0.1.2/photon.min.js"></script>
+```
 
 ## Usage
+
+### Recommended mode
 
 To run the library include the following code **after** the installation tag.
 
@@ -50,6 +58,25 @@ The API key can also be provided through the `options` object to the `highlight`
   document.querySelector('#photon_lib').addEventListener('load', function() {
     photon.highlight({ apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' });
   });
+</script>
+```
+
+### Alternative mode
+
+If the library is placed at the end of the HTML `<body>` element, include the following code **after** the installation tag.
+
+``` {.language-html}
+<script>
+  photon.setup({ apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' });
+  photon.highlight();
+</script>
+```
+
+Or simply:
+
+``` {.language-html}
+<script>
+  photon.highlight({ apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' });
 </script>
 ```
 
