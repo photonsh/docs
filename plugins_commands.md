@@ -32,7 +32,7 @@ Basic example.
 ### Input
 
 ``` {.language-html}
-`<pre><code class="language-text" data-commands="true"></code></pre>`
+<pre><code class="language-text" data-commands="true"></code></pre>
 ```
 
 ### Output
