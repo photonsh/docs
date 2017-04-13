@@ -33,7 +33,7 @@ The method used must be `POST`.
 Several headers should be used when sending the snippet.
 
 Header                              | Value
------------------------------------:|-----------------
+-----------------------------------:|:----------------
 `Authorization`<br>**`Required`**   | `Token API_KEY`
 `Content-Type`<br>**`Required`**    | `text/html`
 `Content-Encoding`<br>*`Optional`*  | `gzip`
@@ -70,7 +70,7 @@ The HTTP status code `200 OK` is received.
 One of the following is received.
 
 Error type                     | HTTP status code
-------------------------------:|-----------------------------
+------------------------------:|:----------------------------
 `not_found`                    | `404 Not Found`
 `authentication_error`         | `401 Unauthorized`
 `invalid_api_key`              | `401 Unauthorized`
@@ -87,14 +87,14 @@ Depending on whether the request is processed correctly or not, different header
 #### In case of success
 
 Header             | Value
-------------------:|-----------------------------------------------
+------------------:|:----------------------------------------------
 `Content-Type`     | `text/html`
 `Content-Encoding` | `gzip`
 
 #### In case of error
 
 Header             | Value
-------------------:|-----------------------------------------------
+------------------:|:----------------------------------------------
 `Content-Type`     | `application/json`
 
 ### Body
@@ -108,7 +108,7 @@ The body of the HTTP response is a string compressed with gzip.
 A JSON object is received with the error type and a descriptive message.
 
 Error                               | Message
------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------
 `not_found`                         | `This API endpoint does not exist.`
 `authentication_error`              | `You did not provide an API key. You need to provide your API key in the Authorization header field, using Token auth (e.g. 'Authorization: Token API_KEY').`
 `invalid_api_key`                   | `You did not provide a valid API key. You can get one at https://photon.sh/signup.`

@@ -4,8 +4,8 @@ We offer an extensive list of popular themes that can be included with just one 
 
 To use a theme just include the tag provided inside the HTML `<head>...</head>` tags of the web document.
 
-Name                   | HTML Tag                                                                                                                             | Demo
------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------
+Name                   | HTML Tag                                                                                                                            | Demo
+:----------------------|:------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------
 Adventurous            | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/0.1.2/adventurous/adventurous.min.css">`                       | [Demo](https://photon.sh/demo?theme=adventurous){target="_blank"}
 An Old Hope            | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/0.1.2/an-old-hope/an-old-hope.min.css">`                       | [Demo](https://photon.sh/demo?theme=an-old-hope){target="_blank"}
 Ariake Dark            | `<link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/0.1.2/ariake-dark/ariake-dark.min.css">`                       | [Demo](https://photon.sh/demo?theme=ariake-dark){target="_blank"}

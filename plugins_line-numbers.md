@@ -8,11 +8,11 @@ Displays line numbers.
 
 ### Accepted Values
 
-#### true
+#### `true`
 
 Using `true` (recommended) will optimize the space used to display line numbers depending on the number of lines in the snippet.
 
-#### uniform
+#### `uniform`
 
 In the case of the `uniform` value, a space capable of storing up to 3 digits (max. 999 lines) will be reserved for line numbers. This value is useful if you want all the snippets on the same page to have the line numbers aligned with each other.
 
