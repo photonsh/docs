@@ -15,10 +15,16 @@ In this section we find rules that are in charge of applying general and structu
 The structural selectors are:
 
 * `.psh`
+* `.psh-code`
+* `.psh-samp`
 * `.psh figure`
 * `.psh pre`
 * `.psh code`
 * `.psh samp`
+
+::: info
+The `psh-code` and `psh-samp` classes are applied to the HTML `<div>` element that also contains the `psh` class (i.e., `<div class="psh psh-code">`). These classes are added in order to apply custom styles depending on the content type of the snippet.
+:::
 
 ## Plugins
 

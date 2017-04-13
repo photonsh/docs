@@ -91,8 +91,6 @@ Connection: close</samp></pre>
 
 #### Output
 
-<div class="codesamp">
-
 ``` {.language-text data-commands="true"}
 curl --head https://www.github.com
 ```
@@ -103,5 +101,3 @@ Content-length: 0
 Location: https://github.com/
 Connection: close
 ´´´
-
-</div>

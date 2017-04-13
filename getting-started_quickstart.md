@@ -12,7 +12,7 @@ To start using Photon you only need the following.
 
 A snippet inside the HTML `<pre><code>...</code></pre>` (code) or `<pre><samp>...</samp></pre>` (output) tags.
 
-The HTML `<code>` and `<samp>` tags must include the `language-NAME` class with the desired language (e.g.`class="language-javascript"`). More information on the [getting-started/api-reference#snippet](https://photon.sh/docs/getting-started/api-reference#snippet) page.
+The HTML `<code>` and `<samp>` tags must include the `language-NAME` class with the desired language (e.g., `class="language-javascript"`). More information on the [getting-started/api-reference#snippet](https://photon.sh/docs/getting-started/api-reference#snippet) page.
 
 ::: warning
 The HTML `<pre>` element is only **required** in official libraries. In case of making an API call the tag **must** be omitted.

@@ -110,17 +110,17 @@ A JSON object is received with the error type and a descriptive message.
 Error                               | Message
 -----------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------
 `not_found`                         | `This API endpoint does not exist.`
-`authentication_error`              | `You did not provide an API key. You need to provide your API key in the Authorization header field, using Token auth (e.g. 'Authorization: Token API_KEY').`
+`authentication_error`              | `You did not provide an API key. You need to provide your API key in the Authorization header field, using Token auth (e.g., 'Authorization: Token API_KEY').`
 `invalid_api_key`                   | `You did not provide a valid API key. You can get one at https://photon.sh/signup.`
-`unsupported_content_type`          | `You did not provide a valid value for the Content-Type header field. You need to provide "text/html" as value (i.e. Content-Type: text/html).`
-`unsupported_content_encoding`      | `You did not provide a valid value for the Content-Encoding header field. You need to provide "gzip" as value (i.e. Content-Encoding: gzip).`
+`unsupported_content_type`          | `You did not provide a valid value for the Content-Type header field. You need to provide "text/html" as value (i.e., Content-Type: text/html).`
+`unsupported_content_encoding`      | `You did not provide a valid value for the Content-Encoding header field. You need to provide "gzip" as value (i.e., Content-Encoding: gzip).`
 `payload_too_large`                 | `Your payload exceeds the accepted size limit. Please do not send more than 25600 bytes. (25 kiB).`
 `invalid_compressed_payload`        | `The Content-Encoding header field contains a valid value but the payload does not match the compression method provided or data is corrupt.`
 `unknown_error`                     | `Unknown error.`
 
 ### Example
 
-Following the previous example, to decompress the result only a pipe with gunzip should be added at the end of the command (i.e. ` | gunzip`).
+Following the previous example, to decompress the result only a pipe with gunzip should be added at the end of the command (i.e., ` | gunzip`).
 
 ``` {.language-text data-commands="true"}
 echo "<code class=\"language-javascript\">console.log('photon');</code>" | gzip --stdout | curl --silent --request POST --header "Authorization: Token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --header "Content-Type: text/html" --header "Content-Encoding: gzip" --header "Accept-Encoding: gzip" --data-binary @- https://api.photon.sh/snippets | gunzip

@@ -122,8 +122,6 @@ Another snippet has been added using the HTML `<samp>` element and the [caption]
 
 ### Output
 
-<div class="codesamp">
-
 ´´´ {.language-json data-request="delete,https://api.github.com/gists/:id"}
 {
   "id": 1124
@@ -133,8 +131,6 @@ Another snippet has been added using the HTML `<samp>` element and the [caption]
 ``` {.language-text data-caption="Response"}
 Status: 204 No Content
 ```
-
-</diV>
 
 ### Input
 
