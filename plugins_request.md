@@ -122,15 +122,14 @@ Another snippet has been added using the HTML `<samp>` element and the [caption]
 
 ### Output
 
-´´´ {.language-json data-request="delete,https://api.github.com/gists/:id"}
+``` {.language-json data-request="delete,https://api.github.com/gists/:id"}
 {
   "id": 1124
 }
-´´´
-
-``` {.language-text data-caption="Response"}
-Status: 204 No Content
 ```
+´´´ {.language-text data-caption="Response"}
+Status: 204 No Content
+´´´
 
 ### Input
 

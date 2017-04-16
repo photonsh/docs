@@ -94,7 +94,6 @@ Connection: close</samp></pre>
 ``` {.language-text data-commands="true"}
 curl --head https://www.github.com
 ```
-
 ´´´ {.language-text data-caption="Output"}
 HTTP/1.1 301 Moved Permanently
 Content-length: 0
