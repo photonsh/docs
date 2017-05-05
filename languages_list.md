@@ -268,6 +268,7 @@ Name                   | Description                                      | Demo
 `sml`                  | Standard ML                                      | [Demo](https://photon.sh/demo?language=sml){target="_blank"}
 `sml-mlb`              | Standard ML MLB                                  |
 `sml-cm`               | Standard ML CM                                   |
+`soy`                  | Closure Templates (Soy)                          | [Demo](https://photon.sh/demo?language=soy){target="_blank"}
 `sql`                  | SQL                                              | [Demo](https://photon.sh/demo?language=sql){target="_blank"}
 `stan`                 | Stan                                             |
 `stylus`               | Stylus                                           | [Demo](https://photon.sh/demo?language=stylus){target="_blank"}
