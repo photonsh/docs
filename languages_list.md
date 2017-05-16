@@ -11,7 +11,7 @@ Name                   | Description                                      | Demo
 `asdoc`                | Adobe Flex ASDoc                                 |
 `flex-config`          | Adobe Flex Config                                |
 `ada`                  | Ada                                              | [Demo](https://photon.sh/demo?language=ada){target="_blank"}
-`angularjs`            | AngularJS Framework                              | [Demo](https://photon.sh/demo?language=angularjs){target="_blank"}
+`angularjs`            | AngularJS                                        | [Demo](https://photon.sh/demo?language=angularjs){target="_blank"}
 `ansible`              | Ansible Playbooks Config                         |
 `apache`               | Apache Config                                    | [Demo](https://photon.sh/demo?language=apache){target="_blank"}
 `apache-modperl`       | Apache mod_perl Config                           |
