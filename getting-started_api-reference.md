@@ -54,7 +54,7 @@ The snippet can be compressed with [gzip](http://www.gzip.org/){target="_blank"}
 Using [UNIX pipelines](https://en.wikipedia.org/wiki/Pipeline_(Unix)){target="_blank"} each of the steps are chained, including gzip compression and sending of data through [cURL](https://curl.haxx.se/){target="_blank"}.
 
 ``` {.language-text data-commands="true"}
-echo "<code class=\"language-javascript\">console.log('photon');</code>" | gzip --stdout | curl --silent --request POST --header "Authorization: Token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --header "Content-Type: text/html" --header "Content-Encoding: gzip" --header "Accept-Encoding: gzip" --data-binary @- https://api.photon.sh/snippets
+printf "<code class=\"language-javascript\">console.log('photon');</code>" | gzip --stdout | curl --silent --request POST --header "Authorization: Token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --header "Content-Type: text/html" --header "Content-Encoding: gzip" --header "Accept-Encoding: gzip" --data-binary @- https://api.photon.sh/snippets
 ```
 
 ## HTTP response
@@ -123,5 +123,5 @@ Error                               | Message
 Following the previous example, to decompress the result only a pipe with gunzip should be added at the end of the command (i.e., ` | gunzip`).
 
 ``` {.language-text data-commands="true"}
-echo "<code class=\"language-javascript\">console.log('photon');</code>" | gzip --stdout | curl --silent --request POST --header "Authorization: Token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --header "Content-Type: text/html" --header "Content-Encoding: gzip" --header "Accept-Encoding: gzip" --data-binary @- https://api.photon.sh/snippets | gunzip
+printf "<code class=\"language-javascript\">console.log('photon');</code>" | gzip --stdout | curl --silent --request POST --header "Authorization: Token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" --header "Content-Type: text/html" --header "Content-Encoding: gzip" --header "Accept-Encoding: gzip" --data-binary @- https://api.photon.sh/snippets | gunzip
 ```
