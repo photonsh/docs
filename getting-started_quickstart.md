@@ -54,7 +54,7 @@ That is all!
     <title>Photon JavaScript example</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/0.1.3/photon-light/photon-light.min.css">
-    <script defer id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/0.1.2/photon.min.js"></script>
+    <script defer id="photon_lib" src="https://cdn.jsdelivr.net/npm/photon-js@0.1.3/dist/photon.min.js"></script>
     <script>
       document.querySelector('#photon_lib').addEventListener('load', function() {
         photon.highlight({ apiKey: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' });

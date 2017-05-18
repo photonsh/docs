@@ -25,7 +25,7 @@ Some HTML special characters [must be escaped](https://photon.sh/docs/getting-st
 The library should be included between the HTML `<head>` and `</head>` tags and it must contain the `defer` and the `id` attributes.
 
 ``` {.language-html}
-<script defer id="photon_lib" src="https://cdn.jsdelivr.net/photon-js/0.1.2/photon.min.js"></script>
+<script defer id="photon_lib" src="https://cdn.jsdelivr.net/npm/photon-js@0.1.3/dist/photon.min.js"></script>
 ```
 
 ### Alternative mode
@@ -33,7 +33,7 @@ The library should be included between the HTML `<head>` and `</head>` tags and 
 The library can be also included just before the HTML closing `</body>` tag, where it does not need those attributes.
 
 ``` {.language-html}
-<script src="https://cdn.jsdelivr.net/photon-js/0.1.2/photon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photon-js@0.1.3/dist/photon.min.js"></script>
 ```
 
 ## Usage
