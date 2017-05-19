@@ -10,18 +10,18 @@ To start using Photon you only need the following.
 
 ### Snippet preparation
 
-A snippet inside the HTML `<pre><code>...</code></pre>` (code) or `<pre><samp>...</samp></pre>` (output) tags.
-
-The HTML `<code>` and `<samp>` tags must include the `language-NAME` class with the desired language (e.g., `class="language-javascript"`). More information on the [getting-started/api-reference#snippet](https://photon.sh/docs/getting-started/api-reference#snippet) page.
+An escaped snippet inside the HTML `<pre><code>...</code></pre>` (code) or `<pre><samp>...</samp></pre>` (output) tags.
 
 ::: warning
 The HTML `<pre>` element is only **required** in official libraries. In case of making an API call the tag **must** be omitted.
 :::
 
+The HTML `<code>` and `<samp>` tags must include the `language-NAME` class with the desired language (e.g., `class="language-javascript"`). More information on the [getting-started/api-reference#snippet](https://photon.sh/docs/getting-started/api-reference#snippet) page.
+
 #### Example
 
 ``` {.language-html}
-<code class="language-javascript">console.log('example');</code>
+<pre><code class="language-javascript">console.log('example');</code></pre>
 ```
 
 ### Snippet process
@@ -53,7 +53,7 @@ That is all!
   <head>
     <title>Photon JavaScript example</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/photon-themes/0.1.3/photon-light/photon-light.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/photonsh/themes@0.1.3/photon-light/photon-light.min.css">
     <script defer id="photon_lib" src="https://cdn.jsdelivr.net/npm/photon-js@0.1.3/dist/photon.min.js"></script>
     <script>
       document.querySelector('#photon_lib').addEventListener('load', function() {

@@ -1,4 +1,4 @@
-# Line numbers
+# Line Numbers
 
 Displays line numbers.
 

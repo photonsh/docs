@@ -1,14 +1,14 @@
 # Why
 
-## Power
+## Powerful
 
 Unlike other syntax highlighters, Photon works on any platform, both browser-side and server-side.
 
 Alternatives that run on the browser do not work optimally. This is because of the technical difficulties involved in understanding as many languages and taking up as little space as possible. Over time, as languages add new features, these syntax highlighters face new challenges that are sometimes impossible to solve.
 
-Photon uses **powerful code parsers** that understand the language used to be able to highlight the snippet accurately.
+Photon uses **powerful parsers** to lexically analyze the code and thus understand the syntax of the language used. This process guarantees a very accurate result. Check out the [getting-started/comparison](https://photon.sh/docs/getting-started/comparison) page to see how this process affects the result.
 
-Also due to this accuracy you can create/modify themes to have **total control** over the color of each element.
+Due to this accuracy, you can create/modify themes to tune the color of each token and obtain **full control** over the syntax highlighting.
 
 ## Ownership
 

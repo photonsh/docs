@@ -2,7 +2,9 @@
 
 Shows the `CHARACTER TABULATION`,` SPACE` and `LINE FEED` special characters.
 
+::: error
 `CARRIAGE RETURN` is not compatible because HTML preprocessing algorithm [gets rid of it](https://html.spec.whatwg.org/multipage/syntax.html#preprocessing-the-input-stream){target="_blank"}.
+:::
 
 ## HTML attribute
 
@@ -53,6 +55,4 @@ function(input, output) {
 
 ## Tips and tricks
 
-### Symbols
-
-Selectors ending in `::before` contain the `content` property with the value of the symbol to be displayed. By default `↩` for `CHARACTER TABULATION`, `·` for `SPACE` and `⇥` for `LINE FEED`.
+Click [here](https://photon.sh/blog/tips-and-tricks-invisibles-plugin).
