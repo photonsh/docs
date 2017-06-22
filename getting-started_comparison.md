@@ -13,7 +13,7 @@ If any result is wrong, you can tell us at [github.com/photonsh/issues](https://
 We have used the following popular libraries to create the comparison:
 
 - [Prism](https://github.com/PrismJS/prism){target="_blank"} 1.6.0.
-- [Highligh.js](https://github.com/isagalaev/highlight.js){target="_blank"} 9.11.0.
+- [Highlight.js](https://github.com/isagalaev/highlight.js){target="_blank"} 9.11.0.
 
 ### Reset
 
