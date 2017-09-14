@@ -53,7 +53,7 @@ That is all!
   <head>
     <title>Photon JavaScript example</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/photonsh/themes@0.1.4/photon-light/photon-light.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/photonsh/themes@0.1.5/photon-light/photon-light.min.css">
     <script defer id="photon_lib" src="https://cdn.jsdelivr.net/npm/photon-js@0.1.3/dist/photon.min.js"></script>
     <script>
       document.querySelector('#photon_lib').addEventListener('load', function() {
