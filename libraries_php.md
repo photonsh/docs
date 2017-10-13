@@ -34,7 +34,7 @@ Some HTML special characters [must be escaped](https://photon.sh/docs/getting-st
 
 ## Installation
 
-The library is available at [Packagist](https://packagist.org/){target="_blank"}, so you can use Composer to install it.
+The library is available at [Packagist](https://packagist.org/packages/photonsh/photon-php){target="_blank"}, so you can use Composer to install it.
 
 ``` {.language-text data-commands="true"}
 $ composer require photonsh/photon-php
@@ -52,22 +52,29 @@ Then, provide the API key to the `setup` method using an array and call the `hig
 require_once __DIR__.'/vendor/autoload.php';
 
 use Photonsh\PhotonPhp;
-use Photonsh\PhotonPhp\Exception\ClientException;
 
 $photon = new PhotonPhp\Photon();
 
 $photon->setup(['apiKey' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']);
 
-try {
-    $result = $photon->highlight('<code class="language-php">echo \'example\';</code></pre>');
-} catch (ClientException $e) {
-    // Handle Exception
-}
-
-echo $result;
+echo $photon->highlight('<pre><code class="language-php">echo \'example\';</code></pre>');
 ```
 
 The API key can also be provided through the `$options` array to the `highlight` method.
+
+``` {.language-php}
+require_once __DIR__.'/vendor/autoload.php';
+
+use Photonsh\PhotonPhp;
+
+$photon = new PhotonPhp\Photon();
+
+echo $photon->highlight('<pre><code class="language-php">echo \'example\';</code></pre>', ['apiKey' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']);
+```
+
+### Exceptions
+
+Photon throws a `Photonsh\PhotonPhp\Exception\ClientException` exception when there is a problem highlighting the snippet.
 
 ``` {.language-php}
 require_once __DIR__.'/vendor/autoload.php';
@@ -77,18 +84,14 @@ use Photonsh\PhotonPhp\Exception\ClientException;
 
 $photon = new PhotonPhp\Photon();
 
+$photon->setup(['apiKey' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']);
+
 try {
-    $result = $photon->highlight('<code class="language-php">echo \'example\';</code></pre>', ['apiKey' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']);
+    echo $photon->highlight('<pre><code class="language-php">echo \'example\';</code></pre>');
 } catch (ClientException $e) {
     // Handle Exception
 }
-
-echo $result;
 ```
-
-### Exceptions
-
-Photon throws a `Photonsh\PhotonPhp\Exception\ClientException` exception when there is a problem highlighting the snippet.
 
 ## API
 
@@ -98,7 +101,7 @@ Method that accepts as single argument an array with configuration parameters. T
 
 #### options
 
-* `apiKey`: The API key to use for all calls to the `highlight` method.
+* *string* `apiKey`: The API key to use for all calls to the `highlight` method.
 
 ### highlight(string $snippet, array $options)
 
